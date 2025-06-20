@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>DI360 Portal</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="manifest" href="manifest.json" />
+    <meta name="theme-color" content="#005BAC" />
+    <script>
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('sw.js');
+      }
+      window.onload = () => {
+        window.location.href = "https://di360.hd-infracore.com/workspace/home/";
+      };
+    </script>
+  </head>
+  <body>
+    <p>DI360 포털로 이동 중입니다...</p>
+  </body>
+</html>
